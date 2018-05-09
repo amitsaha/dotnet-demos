@@ -12,10 +12,11 @@ RUN msbuild ASPNETFramework_API.sln /p:DeployOnBuild=true /p:PublishProfile=Fold
 FROM microsoft/aspnet:4.7.1-windowsservercore-1709
 # Once the above folder profile works, we will copy only
 # the PublishOutput contents
-COPY --from=build-env /app/ASPNETFramework_API /inetpub/wwwroot
-# FIXME: Use PowerShell IIS admin to configure site
-# COPY --from=build-env /app/ASPNETFramework_API C:/site
-#RUN ls C:\site
-#RUN New-Website -Name 'DemoAPI' -Port 80 -PhysicalPath 'c:\site' -ApplicationPool '.NET v4.5'
+# Manual
+# COPY --from=build-env /app/ASPNETFramework_API /inetpub/wwwroot
+# Use PowerShell IIS admin to configure site
+# Learn more: https://octopus.com/blog/iis-powershell
+COPY --from=build-env /app/ASPNETFramework_API C:/site
+RUN New-IISSite -Name 'DemoAPI' -PhysicalPath c:\site -BindingInformation "*:8000:"
 
 WORKDIR /inetpub/wwwroot
