@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "9ff18e449ae67a4751e373ce6bc7d75be8abe7bc"
+    "signature": "75828c012d3859f2274b9ee754fb4825990e3540"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "AspNetCoreTodo/1.0.0": {
         "dependencies": {
+          "BuildBundlerMinifier": "2.8.391",
           "Humanizer": "2.2.0",
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.3",
@@ -36,6 +37,7 @@
           "AspNetCoreTodo.dll": {}
         }
       },
+      "BuildBundlerMinifier/2.8.391": {},
       "Humanizer/2.2.0": {
         "dependencies": {
           "Humanizer.Core.af": "2.2.0",
@@ -4694,6 +4696,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BuildBundlerMinifier/2.8.391": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JvnXAF6e55QKR9t+UcG/kVcWap22fHeKjkUcrJwl2N3vF/NpohuvZlBceqYF9S8aL8xOx6h+PX2plnymc23kiQ==",
+      "path": "buildbundlerminifier/2.8.391",
+      "hashPath": "buildbundlerminifier.2.8.391.nupkg.sha512"
+    },
     "Humanizer/2.2.0": {
       "type": "package",
       "serviceable": true,
@@ -6951,7 +6960,7 @@
     "System.Security.Cryptography.Xml/4.4.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q9Dren/YP5jhRCkDvLfuaPpMTQzP97ANvzq/OoGgwK8YdLRSTABS9oW5/23OKoM2DRCuBrh4qaecD2YNhPtuzQ==",
+      "sha512": "sha512-1m+fKVrApgKYMRuE0MF0vGjqy4XqAp1rCtyAzMXhJajMDDytMh/rHk9hp4M7KKk3QQZoWJUvyUY7xcw74w+JiQ==",
       "path": "system.security.cryptography.xml/4.4.2",
       "hashPath": "system.security.cryptography.xml.4.4.2.nupkg.sha512"
     },

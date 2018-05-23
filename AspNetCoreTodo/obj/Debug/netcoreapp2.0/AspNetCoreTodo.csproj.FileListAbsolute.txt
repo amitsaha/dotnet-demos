@@ -24,3 +24,16 @@
 /Users/amit/work/github.com/amitsaha/dotnet-demos-git/AspNetCoreTodo/AspNetCoreTodo/bin/Debug/netcoreapp2.0/AspNetCoreTodo.runtimeconfig.dev.json
 /Users/amit/work/github.com/amitsaha/dotnet-demos-git/AspNetCoreTodo/AspNetCoreTodo/bin/Debug/netcoreapp2.0/AspNetCoreTodo.dll
 /Users/amit/work/github.com/amitsaha/dotnet-demos-git/AspNetCoreTodo/AspNetCoreTodo/bin/Debug/netcoreapp2.0/AspNetCoreTodo.pdb
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.csprojResolveAssemblyReference.cache
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.csproj.CoreCompileInputs.cache
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.AssemblyInfoInputs.cache
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.AssemblyInfo.cs
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.dll
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\obj\Debug\netcoreapp2.0\AspNetCoreTodo.pdb
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\app.db
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.deps.json
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.runtimeconfig.json
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.runtimeconfig.dev.json
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.dll
+C:\Users\amit.saha\work\github.com\amitsaha\dotnet-demos\AspNetCoreTodo\bin\Debug\netcoreapp2.0\AspNetCoreTodo.pdb
