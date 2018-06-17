@@ -47,7 +47,7 @@ namespace JWTCrafterDemo
         static void Main(string[] args)
         {
             Header h = new Header();
-            h.alg = "HMAC256";
+            h.alg = "HS256";
             h.typ = "JWT";
 
             MemoryStream stream1 = new MemoryStream();  
