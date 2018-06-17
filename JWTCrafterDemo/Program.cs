@@ -34,13 +34,16 @@ namespace JWTCrafterDemo
         private  static string CreateSignature(string message, string secret)
         {
             secret = secret ?? "";
+
             var encoding = new System.Text.ASCIIEncoding();
             byte[] keyByte = encoding.GetBytes(secret);
             byte[] messageBytes = encoding.GetBytes(message);
+
             using (var hmacsha256 = new HMACSHA256(keyByte))
             {
                 byte[] hashmessage = hmacsha256.ComputeHash(messageBytes);
-                return Base64UrlEncoder.Encode(hashmessage.ToString());
+                return Base64UrlEncoder.Encode(System.Text.Encoding.Default.GetString(hashmessage));
+
             }
         }
 
@@ -64,11 +67,13 @@ namespace JWTCrafterDemo
             ser.WriteObject(stream2, p);
             stream2.Position = 0;  
             StreamReader sr2 = new StreamReader(stream2);
-            String payload = Base64UrlEncoder.Encode(sr2.ReadToEnd());
 
-            
+            string payloadString = sr2.ReadToEnd();
+            String payload = Base64UrlEncoder.Encode(payloadString);
+
+            Console.WriteLine(payloadString);
+
             String signature = CreateSignature(header + "." + payload, "supersecret");
-
             String jwt = header + "." + payload + "." + signature;
             Console.WriteLine(jwt);
 
