@@ -11,7 +11,7 @@ namespace docker_dircp
     {
         static async Task<IList<ContainerListResponse>> ListContainersAsync(DockerClient client)
         {
-            return await client.Containers.ListContainersAsync(new ContainersListParameters() { Limit = 10, });
+            return await client.Containers.ListContainersAsync(new ContainersListParameters() { Limit = 100, });
 
         }
 
@@ -46,7 +46,7 @@ namespace docker_dircp
                 try
                 {
                     var TaskResult = client.Containers.GetArchiveFromContainerAsync(container.ID, ArchiveParameters, false);
-                    var data = TaskResult.Result.Stream;
+                    var data = TaskResult.Result.Stream;                    
 
                     MemoryStream ms = new MemoryStream();
                     data.CopyTo(ms);
