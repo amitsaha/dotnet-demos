@@ -68,7 +68,6 @@ namespace docker_dircp
         {
             DockerClient client = new DockerClientConfiguration(new Uri("npipe://./pipe/docker_engine")).CreateClient();
             CopyDirectoryFromContainer(client, args[0], args[1]);
-
         }
     }
 }
