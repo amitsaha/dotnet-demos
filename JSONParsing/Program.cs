@@ -7,11 +7,18 @@ namespace JSONParsing
     {
         static void Main(string[] args)
         {
-            var jsonData = @"{""Id"":""06094ea0-1aa4-47b8-9c11-ad18cb18ee72""}";
-            
-           // Deserialize json encoded string to an object
-           var jsonObject = JsonConvert.DeserializeObject(jsonData);
-           Console.WriteLine(jsonObject);
+           var jsonData =  JsonConvert.SerializeObject(new
+            {
+                key1 = "value1",
+                Payload = JsonConvert.SerializeObject(new
+                {
+                    Id = 1,
+                }),
+             });
+            Console.WriteLine(jsonData);
+            // Deserialize json encoded string to an object
+            var jsonObject = JsonConvert.DeserializeObject(jsonData);
+            Console.WriteLine(jsonObject);           
         }
     }
 }
