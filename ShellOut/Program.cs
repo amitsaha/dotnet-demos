@@ -10,10 +10,15 @@ namespace ShellOut
             Process myProcess = new Process();
             myProcess.StartInfo.UseShellExecute = false;
             myProcess.StartInfo.FileName = args[0];
-            foreach(string a in args)
+            
+            if (args.Length >=1 )
             {
-                myProcess.StartInfo.Arguments += a + " ";
+                for(var i=1; i < args.Length; i++)
+                {
+                    myProcess.StartInfo.Arguments += args[i] + " ";
+                }
             }
+            
             myProcess.Start();
             myProcess.WaitForExit();
 
