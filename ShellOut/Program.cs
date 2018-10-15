@@ -30,6 +30,7 @@ namespace ShellOut
                 
                 myProcess.Start();
                 StreamReader reader = myProcess.StandardOutput;
+
                 do
                 {
                     if (!myProcess.HasExited)
